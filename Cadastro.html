@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Cadastro.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&family=Righteous&family=Sarala:wght@400;700&display=swap" rel="stylesheet">
+   
+    <title>Cadastro</title>
+</head>
+<body>
+    <div class="container">
+      <div class="header">
+          <h2>Crie uma conta</h2>
+      </div>
+
+      <form id="form" class="form">
+
+        <div class="form-control">
+            <label for="username">Nome de usuário</label>
+            <input type="text"id="username" placeholder="Digite seu nome de usuário">
+            <i class="fas fa-exclamation-circle"></i>
+            <i class="fas fa-check-circle"></i>
+            <small>Mensagem de erro</small>
+        </div>
+
+        <div class="form-control">
+            <label for="cpf">CPF</label>
+            <input type="number"id="cpf" placeholder="Digite seu cpf">
+            <i class="fas fa-exclamation-circle"></i>
+            <i class="fas fa-check-circle"></i>
+            <small>Mensagem de erro</small>
+        </div>
+
+        <div class="form-control">
+            <label for="email">Email</label>
+            <input type="text" id="email" placeholder="Digite seu email" >
+            <i class="fas fa-exclamation-circle"></i>
+            <i class="fas fa-check-circle"></i>
+            <small>Mensagem de erro</small>
+        </div>
+
+        <div class="form-control">
+            <label for="password">Senha</label>  
+            <input type="password" id="password" placeholder="Digite sua senha">
+            <i class="fas fa-exclamation-circle"></i>
+            <i class="fas fa-check-circle"></i>
+            <small>Mensagem de erro</small>
+            <p id="meuParagrafo" class="descricao-senha">(Deve ter no minímo 8 caracteres, um caractere especial e um número.)</p> 
+        </div>
+
+        <div class="form-control">
+            <label for="password-confirmation">Confirmação de senha</label>
+            <input type="password" id="password-confirmation" placeholder="Digite sua senha novamente">
+            <i class="fas fa-exclamation-circle"></i>
+            <i class="fas fa-check-circle"></i>
+            <small>Mensagem de erro</small>
+        </div>
+
+            <button id="botaoCadastro" class="botao-cadastro" type="submit">Enviar</button>
+            <a class="link-login" href="pagLogin.html">Já tem cadastro? Faça login</a>        
+        
+      </form>
+      
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/f9e19193d6.js"
+      crossorigin="anonymous"
+    ></script><!--script para adicionar os icons-->
+    
+    <!--link do site dos icons de check e exclamação https://fontawesome.com/icons-->
+    <script src="Cadastro.js"></script>
+</body>
+</html>
